@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dustline — Open World Crime</title>
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<canvas id="game" aria-label="Dustline: an open-world crime game in a desert highway town"></canvas>
+<div id="hud">
+  <div id="hud-top-left">
+    <div id="cash">$0</div>
+    <div id="wanted"></div>
+    <div id="mission-line"></div>
+  </div>
+  <div id="hud-top-right"><canvas id="minimap" width="220" height="168"></canvas></div>
+  <div id="hud-bottom-left">
+    <div id="speed">0 mph</div>
+    <div id="fuel"><div id="fuel-fill"></div><span id="fuel-label">FUEL</span></div>
+    <div id="storm" class="hidden">DUST STORM — VISIBILITY LOW</div>
+  </div>
+  <div id="banner" class="hidden"></div>
+  <div id="toast" class="hidden"></div>
+</div>
+<div id="overlay" class="hidden">
+  <div id="overlay-card">
+    <h1 id="overlay-title">DUSTLINE</h1>
+    <p id="overlay-sub">A desert highway town. One driver. Five jobs. No way back.</p>
+    <div id="overlay-body"></div>
+    <div id="overlay-hint"></div>
+    <button id="overlay-button">START ENGINE</button>
+  </div>
+</div>
+<p id="status" role="status" aria-live="polite"></p>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
